@@ -1,0 +1,8 @@
+{% extends "base/base.html" %}
+{% block title %}注册页面{% endblock %}
+<form action="/register" method="post">
+	
+	{% csrf_token %}
+	{{ form.email }}
+	<input type="submit" value="提交">
+<form>
