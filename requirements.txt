@@ -1,6 +1,11 @@
-django
+django == 1.8
 jinja2
 MySQL-python
 aliyun-python-sdk-core
 aliyun-python-sdk-ecs
 django-users2
+pandas
+matplotlib
+xlwt
+bpython
+django-highcharts

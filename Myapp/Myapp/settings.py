@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'users',
 ]
 
-MIDDLEWARE = [
+MIDDLEWARE_CLASSES = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -160,6 +160,7 @@ LOGGING = {
     },
 }
 
-AUTH_USER_MODULE = 'learn.MyUser'
-AUTHENTICATION_BACKENDS = ('django.contrib.auth.backends.ModelBackend',)
+AUTH_USER_MODEL = 'learn.MyUser'
+#AUTHENTICATION_BACKENDS = ('django.contrib.auth.backends.ModelBackend',)
+AUTHENTICATION_BACKENDS = ('learn.Myauthbackend','django.contrib.auth.backends.ModelBackend',)
 DJANGO_LOG_LEVEL=DEBUG

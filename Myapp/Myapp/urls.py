@@ -32,4 +32,8 @@ urlpatterns = [
     url(r'^ecs_list$', aliyun_views.ecs_list),
     url(r'^upload$', learn_views.upload),
     url(r'^up_recive$', learn_views.up_recive),
+    url(r'^inters_data$', learn_views.inters_data,name='inters'),
+    url(r'^get_imge$', learn_views.get_imge),
+    url(r'^export_cvs$', learn_views.export_cvs),
+    url(r'^add', learn_views.add),
 ]
