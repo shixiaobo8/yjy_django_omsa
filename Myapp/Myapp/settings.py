@@ -161,6 +161,10 @@ LOGGING = {
 }
 
 AUTH_USER_MODEL = 'learn.MyUser'
+<<<<<<< HEAD
 #AUTHENTICATION_BACKENDS = ('django.contrib.auth.backends.ModelBackend',)
 AUTHENTICATION_BACKENDS = ('learn.Myauthbackend','django.contrib.auth.backends.ModelBackend',)
+=======
+AUTHENTICATION_BACKENDS = ('django.contrib.auth.backends.ModelBackend',)
+>>>>>>> d23991e062130abf565ef4f6b25549cd545a6d44
 DJANGO_LOG_LEVEL=DEBUG
